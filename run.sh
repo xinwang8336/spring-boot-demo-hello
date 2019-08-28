@@ -5,7 +5,6 @@ echo "delete container"
 docker rm springboot-demo;
 echo "delete image"
 docker rmi itmuch/springboot-demo-0.0.1&&
-cd /home/images-build/springboot-demo/&&
 echo "build image"
 docker build -t itmuch/springboot-demo-0.0.1 .&&
 echo "run container"
